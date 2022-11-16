@@ -21,3 +21,8 @@ The images used in this app is from [Unsplash](https://unsplash.com/s/photos/wea
 ### `Live site`
 
 This app is deployed using [vercel](https://weather-app-alpha-lilac.vercel.app/)
+
+### `Fonts`
+
+The font family used is [Google Fonts: Roboto](https://fonts.google.com/specimen/Roboto)
+and [Google Fonts: Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)

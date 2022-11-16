@@ -5,25 +5,28 @@ const Weather = () => {
 	return (
 		<>
 			<main>
-				<section>
-					<div>
-						<h1>LAGOS</h1>
-						<p>19</p>
-						<p>clear skies</p>
+				<div className='weather__input'>
+					<input type='text' placeholder='Enter City' />
+				</div>
+				<section className='container'>
+					<div className='container__top'>
+						<p>LAGOS</p>
+						<h2 className='weather__temp'>19</h2>
+						<p className='desc'>clear skies</p>
 					</div>
-				</section>
-				<section>
-					<div>
-						<p>30</p>
-						<p>Humidity</p>
-					</div>
-					<div>
-						<p>30</p>
-						<p>Visibility</p>
-					</div>
-					<div>
-						<p>30</p>
-						<p>Wind</p>
+					<div className='weather__info'>
+						<div>
+							<p>30</p>
+							<p>Humidity</p>
+						</div>
+						<div>
+							<p>30</p>
+							<p>Visibility</p>
+						</div>
+						<div>
+							<p>30</p>
+							<p>Wind</p>
+						</div>
 					</div>
 				</section>
 			</main>

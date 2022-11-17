@@ -6,62 +6,83 @@
 	box-sizing: border-box;
 }
 
-body {
+.weather__app {
 	font-family: 'Roboto', sans-serif;
+	line-height: 1.2;
+	font-size: 1rem;
+	height: 100vh;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.3);
+	color: #fff;
+	padding: 0 1rem;
+}
+.weather__app::before {
+	content: '';
 	background-image: url('../../Assets/weather-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	height: 100%;
-	color: #f8f8f8;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	max-width: 700px;
-	margin: 30px auto 0 auto;
-	padding: 0 15px;
+	height: 100vh;
 }
 .weather__input {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+	padding-top: 2rem;
 }
 .weather__input input {
-	padding: 20px;
-	background-color: transparent;
-	border-radius: 20px;
-	border: 1px solid #f8f8f8;
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #f8f8f8;
+	padding: 1rem;
 	outline: 0;
-	color: #fff;
-	width: 70%;
+	border: 1px solid #f8f8f8;
+	border-radius: 15px;
 }
-
 .weather__input input::placeholder {
 	color: #f8f8f8;
+	font-size: 1.1;
 }
 .container {
+	max-width: 700px;
+	height: 650px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin: 0 auto;
 	position: relative;
-	height: 80vh;
+	top: 10%;
+}
+.container__top {
+	width: 100%;
+}
+.container .location {
+	font-size: 1.5rem;
 }
 .weather__temp {
-	font-size: 60px;
-	margin-top: 20px;
+	font-size: 6rem;
 	font-family: 'Lexend Deca', sans-serif;
 }
-.desc {
+.container__top .desc {
 	position: absolute;
-	right: -50px;
-	top: 70px;
-	transform: rotate(-90deg);
-	font-size: 30px;
+	right: -1%;
+	transform: rotate(270deg);
+	font-size: 1.5rem;
 }
 .weather__info {
 	display: flex;
 	justify-content: space-between;
-	border: 1px solid #fff;
-	border-radius: 10px;
-	padding: 20px;
 	text-align: center;
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 1px solid #f8f8f8;
+	border-radius: 10px;
+}
+.weather__emp {
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-bottom: 0.3rem;
 }
